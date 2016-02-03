@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget>
+	<ThumbIcon itemtype="string">resource/icon/icon_106.png</ThumbIcon>
+	<BigThumbIcon itemtype="string">resource/icon/icon_115.png</BigThumbIcon>
+	<ListIcon itemtype="string">resource/icon/icon_85.png</ListIcon>
+	<BigListIcon itemtype="string">resource/icon/icon_95.png</BigListIcon>
+    <category itemtype="string">information</category>
+    <autoUpdate itemtype="boolean">y</autoUpdate>
+    <type itemtype="string">user</type>
+	<cpname itemtype="string"></cpname>
+    <cpauthjs itemtype="string"></cpauthjs>
+	<ver itemtype="string">1.007</ver>
+	<mgver itemtype="string">3.456</mgver>
+	<apptype itemtype="string">11</apptype>
+	<fullwidget itemtype="boolean">n</fullwidget>
+	<srcctl itemtype="boolean">n</srcctl>
+	<ticker itemtype="boolean">y</ticker>
+	<childlock itemtype="boolean">n</childlock>
+	<audiomute itemtype="boolean">n</audiomute>
+	<videomute itemtype="boolean">n</videomute>
+	<dcont itemtype="boolean">y</dcont>
+    <network itemtype="boolean">y</network>
+	<widgetname itemtype="string">LaPatilla</widgetname>
+	<description itemtype="string">Noticias, Información e Investigación</description>
+	<width itemtype="string">960</width>
+	<height itemtype="string">540</height>
+	<author itemtype="group">
+		<name itemtype="string">Andres Hernandez</name>
+		<email itemtype="string">pelones.creativos@gmail.com</email>
+		<organization itemtype="string">Pelones Creativos</organization>
+	</author>
+</widget>

@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/div/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>LaPatilla.com</title>
+		<!-- Common widget API -->
+		<script type='text/javascript' language='javascript' src='$MANAGER_WIDGET/Common/API/TVKeyValue.js'></script>
+		<script type='text/javascript' language='javascript' src='$MANAGER_WIDGET/Common/API/Widget.js'></script>
+		<script type='text/javascript' language='javascript' src='$MANAGER_WIDGET/Common/jquery.js'></script>
+		
+		<!-- Lib -->
+		<script type='text/javascript' language='javascript'  src="javascript/lib/petit.js"></script>
+		<script type='text/javascript' language='javascript' src='javascript/lib/ads.js'></script>
+		
+		<!-- Plugin -->
+		<object id="pluginObjectNetwork" border="0" classid="clsid:SAMSUNG-INFOLINK-NETWORK"></object>
+				
+		<!-- Widget code -->
+        <script language='javascript' type='text/javascript' src='javascript/main.js'></script>
+		<script language='javascript' type='text/javascript' src='javascript/news.js'></script>     
+		
+		<!-- Style sheets -->
+		<link rel='stylesheet' href='css/main.css' type='text/css'>
+	</head>
+
+	<body onLoad="Main.onLoad();">
+		
+		<a id="exit" href="javascript:void(0)">
+    		<div id="exit-confirm" class="nav-info">
+    			<p>¿Desea salir de la Aplicación?</p>
+    			<div id= "exit-legend">
+		    	    <div class="enter">Aceptar</div>
+		    	    <div class="back">Cancelar</div>
+	    	    </div>
+			</div>
+    	</a>
+		
+		<!-- Samsung Terms -->
+		<a id="samsung-terms" href="javascript:void(0)">
+			<div id="terms-text">
+				<p>En ningún caso Samsung será responsable por el contenido y/o cualquier tipo de textos o imágenes que contengan las aplicaciones que se descarguen.</p>
+				<p>Dicho Contenido es de responsabilidad exclusiva de la entidad que lo produce. En consecuencia, cualquier acción, reclamo u ofensa originada o sufrida como consecuencia del Contenido, no será responsabilidad de Samsung y deberá ser dirigida a dicha entidad.</p>
+				<p>Al descargar las aplicaciones Usted acuerda:</p>
+				<ul>
+					<li>Utilizar el Contenido descargado de conformidad con la normativa aplicable y según lo indicado en las instrucciones, políticas o páginas que se refieran a la aplicación relativa al contenido descargado;</li>
+					<li>Utilizar el Contenido descargado únicamente para fines privados y en ningún caso para fines comerciales;</li>
+					<li>No realizar copias, entregar, vender, revender, prestar, arrendar, ofrecer, emitir, enviar, distribuir, transferir, comunicar, reproducir, modificar, divulgar, ejecutar, o explotar comercialmente el Contenido descargado, ni ponerlo a disposición de terceros;</li>
+					<li>No utilizar sistemas o medios automatizados, excepto aquellos suministrados por Samsung, para la selección o la descarga del Contenido;</li>
+					<li>No facilitar su contraseña o permitir que terceros accedan al Contenido descargado por Usted;</li>
+					<li>No sacar, eludir, realizar ingeniería inversa, desencriptar o, de algún otro modo, interferir en cualquier procedimiento de uso aplicable o tratar de eludir la gestión de derechos digitales o aplicaciones para la protección frente a copias asociadas al Contenido ni otras tecnologías utilizadas para controlar el acceso al Contenido, el uso del mismo o la identificación de información asociada al Contenido descargado.</li>
+				</ul>
+			</div>
+		</a>	
+		<div id="terms-navi">
+			<img src="resource/nav-icon/help_enter.png"></img>&nbsp;&nbsp;<a class="style_navi">Aceptar</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="resource/nav-icon/help_back.png"></img>&nbsp;&nbsp;<a class="style_navi">Rechazar</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</div>
+		
+		
+		<div id="container" class="news">
+		    <img id="loading-indicator" />
+			<img id="scroll-up" />
+		    <img id="scroll-down" />
+			<div id="page-number"></div>
+			<div id="reader">
+				<ul id="feed-list" ></ul>
+				<div id="feed-display" class="list"></div>
+				<div id="error-message"></div>
+				<div id="publicity">
+					<img src="resource/images/banner.png" />
+				</div>
+			</div>
+			<div id="Logo">
+				<img src="resource/images/bgLogo.png" />
+			</div>
+			<ul id="nav-help">
+				<li class="lr">&nbsp;</li>
+				<li class="move">&nbsp;</li>
+				<li class="ud">&nbsp;</li>
+				<li class="enter">&nbsp;</li>
+				<li class="back">&nbsp;</li>
+				<li class="exit">&nbsp;</li>
+				<li class="load">&nbsp;&nbsp;&nbsp;</li>
+			</ul>
+			
+		</div>
+		
+		<div id="templates">
+			<div id="tpl-feed" class="feed">
+				<ul class="post-list"></ul>
+				<div class="single-post"></div>
+				<a id="single-post-anchor" href="javascript:void(0)"></a>
+			</div>
+			<li id="tpl-feed-selector"><a href="javascript:void(0)">{title}</a></li>
+			<div id="tpl-post" class="post">
+				<h2>{title}</h2>
+			    <div class="date">{date:format(%yyyy/%MM/%dd %hh:%mm:%ss)}</div>
+				<div class="description">{description}</div>
+			</div>
+			<li id="tpl-post-selector"><a href="javascript:void(0)">{enclosure} {title}<span class="date"></span></a></li>
+			<li id="tpl-source-option"><a href="javascript:void(0)"><img>{label}</a></li>
+		</div>
+		<!--script>
+            news.Reader.load("RSS", 1);
+		</script-->
+	</body>
+</html>
